@@ -20,10 +20,10 @@
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link"><i class="bi bi-cart" style="font-size:40px;"></i></a>
+                <a href="#" class="nav-link"><i class="bi bi-cart" style="font-size:30px;"></i> Cart</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"><i class="bi bi-person-fill" style="font-size:40px;"></i></a>
+                <a href="#" class="nav-link"><i class="bi bi-person-fill" style="font-size:30px;"></i>Profile</a>
               </li>
             </ul>
           </div>
