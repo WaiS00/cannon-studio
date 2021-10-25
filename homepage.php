@@ -28,22 +28,22 @@
             <div class="carousel-item active">
                 <img src="resources/img/carousel-homepage.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5> It's yer boi, Cannon Studio</h5>
+                    <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
             </div>
         <div class="carousel-item">
             <img src="resources/img/carousel-homepage2.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5> It's yer boi, Cannon Studio</h5>
+                    <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
         </div>
         <div class="carousel-item">
             <img src="resources/img/carousel-homepage3.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5> It's yer boi, Cannon Studio</h5>
+                    <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
         </div>
     </div>
