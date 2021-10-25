@@ -21,9 +21,23 @@ html body {
 
 .view-btn{
     background-color:red !important;
-    border-color:red !important;
+    border-color:red !important;    
 }
 
 .new-release-cam{
     font-size:1.5em;
 }
+
+.text-description{
+    text-decoration: none;
+    color:black;
+    font-size:1em;
+}
+
+.row-center{
+    text-align: center;
+}
+
+.dslr-description{
+
+}   
