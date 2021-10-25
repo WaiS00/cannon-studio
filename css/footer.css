@@ -1,0 +1,38 @@
+.footer{
+    position:relative;
+    bottom:0;
+    width:100%;
+
+}
+
+.bi-facebook{
+    color: white;
+    border-radius: 1em 1em 0em 1em;
+    font-size: 2em;
+    background-color: #24589F;
+    padding: 0rem 0.15rem;
+    
+}
+
+
+.bi-instagram{
+    color: white;
+    background-image: linear-gradient(to right bottom, #5561cf, #7f5bcc, #a253c5, #bf49ba, #d83eac,
+     #e9389b, #f63789, #ff3c77, #ff4c61, #ff614b, #ff7734, #ff8d1a);
+    border-radius: 1em 1em 0em 1em;
+    font-size: 2em;
+    background-color: white;
+    padding: 0rem 0.15rem;
+}
+
+.bi-twitter{
+    color: white;
+    background-color: rgb(1, 170, 235);
+    border-radius: 1em 1em 0em 1em;
+    font-size: 2em;
+    padding: 0rem 0.15rem;
+    
+}
+
+
+
