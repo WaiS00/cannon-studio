@@ -62,17 +62,21 @@
     <div class="container new">
         <i href="#" class="bi bi-newspaper new-release-cam"> New Release !</i>
     </div>
-        <div class="card mb-3">
-        <div class="row g-0">
+        <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="row g-0 row-center">
             <div class="col-md-4">
             <img src="resources/img/dslr-1.png" class="img-fluid rounded-start dslr-image" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-6 justify-content-center align-self-center">
             <div class="card-body">
-                <h5 class="card-title">Cannon EOS R6 </h5>
-                <p class="card-text">Conquer the darkness with the EOS R6. This full-frame mirrorless camera based on the revolutionary RF mount comes with powerful In-Body Image Stabilization up to 8 stops.</p>
-                <p class="card-text"><small class="text-muted">While stock last hehe</small></p>
-                <button class="btn btn-primary view-btn" type="button">Click here to view more!</button>
+                <div class="dslr-description ">
+                    <h2 class="card-title">Cannon EOS R6 </h2>
+                    <p class="card-text text-description">Conquer the darkness with the EOS R6. This full-frame mirrorless camera based on the revolutionary RF mount comes with powerful In-Body Image Stabilization up to 8 stops, ISO range up to 102400 and low luminance AF sensitivity of up to EV -6.5 – all designed to give you optimum performance for low-light photography.</p>
+                    <p class="card-text"><small class="text-muted">While stock last hehe</small></p>
+                    <button class="btn btn-primary view-btn" type="button">Click here to view more!</button>
+                </div>
             </div>
             </div>
         </div>
