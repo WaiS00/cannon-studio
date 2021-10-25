@@ -26,27 +26,27 @@
             </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="resources/img/carousel-homepage.png" class="d-block w-100" alt="...">
+                <img src="resources/img/carousel-homepage.png" class="d-block w-100 carouselimg" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> It's yer boi, Cannon Studio</h5>
                     <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
             </div>
         <div class="carousel-item">
-            <img src="resources/img/carousel-homepage2.png" class="d-block w-100" alt="...">
+            <img src="resources/img/carousel-homepage2.png" class="d-block w-100 carouselimg" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> It's yer boi, Cannon Studio</h5>
                     <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
         </div>
         <div class="carousel-item">
-            <img src="resources/img/carousel-homepage3.png" class="d-block w-100" alt="...">
+            <img src="resources/img/carousel-homepage3.png" class="d-block w-100 carouselimg" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5> It's yer boi, Cannon Studio</h5>
                     <p> “The Most Cheap-pluck Camera Award”</p>
                 </div>
         </div>
-    </div>
+        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -56,6 +56,28 @@
             <span class="visually-hidden">Next</span>
         </button>
         </div>
+    </section>
+
+    <section id="new-release">
+    <div class="container new">
+        <i href="#" class="bi bi-newspaper new-release-cam"> New Release !</i>
+    </div>
+        <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src="resources/img/dslr-1.png" class="img-fluid rounded-start dslr-image" alt="...">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Cannon EOS R6 </h5>
+                <p class="card-text">Conquer the darkness with the EOS R6. This full-frame mirrorless camera based on the revolutionary RF mount comes with powerful In-Body Image Stabilization up to 8 stops.</p>
+                <p class="card-text"><small class="text-muted">While stock last hehe</small></p>
+                <button class="btn btn-primary view-btn" type="button">Click here to view more!</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
     </section>
 
 
