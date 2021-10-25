@@ -1,3 +1,29 @@
 html body {
  padding-top: 6.2em;
 }
+
+.new{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.dslr-image{
+    width: 90%;
+    height:90%;
+}
+
+.carouselimg{
+    width:10em;
+    height:30em;
+    object-fit: cover;
+}
+
+.view-btn{
+    background-color:red !important;
+    border-color:red !important;
+}
+
+.new-release-cam{
+    font-size:1.5em;
+}
