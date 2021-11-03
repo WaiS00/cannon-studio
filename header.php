@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/css/homepage.css">
-<link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
    
 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
