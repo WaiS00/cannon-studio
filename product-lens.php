@@ -19,8 +19,8 @@
 
         <div class = "container product">
         <?php
-        $query = "SELECT * FROM tbl_product";
-        $product_array = $shoppingCart->getAllProduct($query);
+        $query = "SELECT * FROM tbl_product WHERE category = 'lens'";
+        $product_array = $shoppingCart->getLens($query);
         if (!empty($product_array)) {
             foreach ($product_array as $key => $value) {
         ?>

@@ -12,6 +12,38 @@ class ShoppingCart extends DBController
         return $productResult;
     }
 
+    function getSet()
+    {
+        $query = "SELECT * FROM tbl_product WHERE category = 'set'";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }
+
+    function getBody()
+    {
+        $query = "SELECT * FROM tbl_product WHERE category = 'body'";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }    
+    
+    function getLens()
+    {
+        $query = "SELECT * FROM tbl_product WHERE category = 'lens'";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }
+
+    function getAccessories()
+    {
+        $query = "SELECT * FROM tbl_product WHERE category = 'accessories'";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }
+
     function getMemberCartItem($member_id)
     {
         $query = "SELECT tbl_product.*, tbl_cart.id as cart_id,tbl_cart.quantity FROM tbl_product, tbl_cart WHERE 
