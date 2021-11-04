@@ -1,6 +1,6 @@
-body {
-	width: 610px;
-	font-family: arial;
+.product{
+	margin-top: 10em;
+	text-align: center;
 }
 
 #shopping-cart table {
@@ -52,10 +52,10 @@ a.btnRemoveAction:visited {
 }
 
 .btnAddAction {
-	background-color: #eb9e4f;
+	background-color: #ff0000;
 	border: 0;
 	padding: 3px 10px;
-	color: #3e3e3e;
+	color: #ffffff;
 	margin-left: 2px;
 	border-radius: 2px;
 	cursor:pointer;
@@ -70,10 +70,6 @@ a.btnRemoveAction:visited {
 	padding: 10px;
 }
 
-#product-grid {
-	margin-bottom: 30px;
-	text-align: center;
-}
 
 .product-item {
 	display: inline-block;
@@ -87,17 +83,22 @@ a.btnRemoveAction:visited {
 .product-item div {
 	text-align: center;
 	margin: 10px 5px;
-	width: 150px;
 }
 
 .product-price {
 	color: #005dbb;
 	font-weight: 600;
+	text-align: center;
 }
 
 .product-image {
 	height: 100px;
 	background-color: #FFF;
+}
+
+.product-img{
+	height: 12em;
+	width: 12em;
 }
 
 .clear-float {
@@ -109,3 +110,13 @@ a.btnRemoveAction:visited {
 	border: #CCC 1px solid;
 	padding: 2px 1px;
 }
+
+.product-name {
+	padding-top: 5em;
+	text-align: center;
+}
+
+.quantity{
+	text-align: center;
+}
+
