@@ -12,20 +12,6 @@
 	background-color: #FFFFFF;
 }
 
-.txt-heading {
-	color: #FFF;
-	margin-bottom: 10px;
-	text-align: left;
-    border-bottom: #609edc 5px solid;
-}
-
-.txt-heading-label {
-	display: inline-block;
-    background: #97c0ea;
-    padding: 10px 10px 6px 10px;
-    color: #5a5a5a;
-}
-
 a.btnRemoveAction {
 	color: #D60202;
 	border: 0;
@@ -45,9 +31,7 @@ a.btnRemoveAction:visited {
 	border: #FFF 1px solid;
 	padding: 1px 10px;
 	color: #ff0000;
-	font-size: 0.8em;
 	float: right;
-	text-decoration: none;
 	border-radius: 4px;
 }
 
@@ -120,3 +104,7 @@ a.btnRemoveAction:visited {
 	text-align: center;
 }
 
+.whole{
+	margin-top: 10em;
+	margin-bottom: 10em;
+}

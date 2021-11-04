@@ -32,7 +32,7 @@
                         <div>
                         <div class="product-name"><strong><?php echo $product_array[$key]["name"]; ?></strong></div>
                         </div>
-                        <div class="product-price"><?php echo "$" . $product_array[$key]["price"]; ?></div>
+                        <div class="product-price"><?php echo "RM" . $product_array[$key]["price"]; ?></div>
                         <div>
                             <input class= "quantity" type="text" name="quantity" value="1" size="2" />
                         </div>
