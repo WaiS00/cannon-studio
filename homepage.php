@@ -75,7 +75,7 @@
                     <h2 class="card-title">Cannon EOS R6 </h2>
                     <p class="card-text text-description">Conquer the darkness with the EOS R6. This full-frame mirrorless camera based on the revolutionary RF mount comes with powerful In-Body Image Stabilization up to 8 stops, ISO range up to 102400 and low luminance AF sensitivity of up to EV -6.5 – all designed to give you optimum performance for low-light photography.</p>
                     <p class="card-text"><small class="text-muted">While stock last hehe</small></p>
-                    <button class="btn btn-primary view-btn" type="button">Click here to view more!</button>
+                    <a href="product-list.php" class="btn view-btn" role="button" style="color:white;">Click here to view more!</a>
                 </div>
             </div>
             </div>

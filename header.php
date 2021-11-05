@@ -19,7 +19,7 @@
   <div class="collapse navbar-collapse" id="navmenu">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item active">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,10 +34,10 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services Provided</a>
+        <a class="nav-link" href="service_provided.php">Services Provided</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="contact_us.php">Contact Us</a>
       </li>
     </ul>
     <ul class="navbar-nav ms-auto">
