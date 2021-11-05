@@ -45,7 +45,28 @@
         <a href="cart_main.php" class="nav-link"><i class="bi bi-cart"></i> Cart</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link"><i class="bi bi-person-fill"></i>Profile</a>
+        <?php 
+            if(isset($_SESSION['email'])){
+            $email = $_SESSION['email'];
+        ?>
+                <li class="hvr-float-shadow">
+                    <a href="user-account.php" class="nav-link"><span class="link-text"><?php echo $email;?></span></a>
+                </li>
+                <li class="hvr-float-shadow">
+                    <a href="logout.php">Log Out</a>
+                </li>
+        <?php 
+            } else {
+        ?>
+                <li class="hvr-float-shadow">
+                    <a href="register.php" class="nav-link"><span class="link-text">Sign Up</span></a>
+                </li>
+                <li class="hvr-float-shadow">
+                    <a href="login.php" class="nav-link"><span class="link-text">Log In</span></a>
+                </li>
+        <?php 
+            }
+        ?>
       </li>
     </ul>
   </div>

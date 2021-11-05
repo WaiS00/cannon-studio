@@ -40,21 +40,21 @@ body {
     padding-left: 11px;
     padding-right: 9px;
     font-size: 16px;
-    height: 27px;
+    height: 40px;
     display: block;
     flex: 10;
     outline: none;
     margin: 0 10px 0 0;
     box-sizing: border-box;
-    border: 1px solid #aaa;
+    border: 1px solid rgb(255, 0, 0);
     border-radius: 13px;
   }
   input.send-button {
     display: block;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgb(255, 0, 0);
     flex: 1;
     border: 1px solid rgba(0,0,0,.2);
-    height: 27px;
+    height: 40px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 25px;
