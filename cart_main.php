@@ -1,7 +1,8 @@
 <HTML>
 <?php require_once "backend/config.php";?>
 <HEAD>
-<TITLE>How to Build a Persistent Shopping Cart in PHP</TITLE>
+<title>Cannon Studio</title>
+<link rel="icon" href="resources/img/cannon_logo.png" />
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">

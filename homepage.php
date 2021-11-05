@@ -16,7 +16,6 @@
 
 <body>
 <?php include 'header.php';?>
-
     <section id="carousel-picture">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">

@@ -1,9 +1,10 @@
-<?php require_once 'backend/login_backend.php';?>
+<?php
+
+ require_once 'backend/login_backend.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once "backend/config.php"; ?>
-<?php include 'header.php';?>
 
 <HEAD>
     <meta charset="UTF-8">
@@ -18,7 +19,9 @@
 </HEAD>
 
 	<body>
-		<form action="login.php" method="post">
+	<?php include 'header.php';?>
+
+		<form action="" method="post">
 			<table width="450" class="center2">
 				<h1 class="titleName2">Login</h1>
 				<tr>

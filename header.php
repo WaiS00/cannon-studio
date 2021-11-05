@@ -1,3 +1,4 @@
+<?php session_start();?>
 <link rel="stylesheet" href="/css/homepage.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -18,8 +19,8 @@
 
   <div class="collapse navbar-collapse" id="navmenu">
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="homepage.php">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,14 +47,10 @@
       </li>
       <li class="nav-item">
         <?php 
-            if(isset($_SESSION['email'])){
-            $email = $_SESSION['email'];
+        if(isset($_SESSION['name'])){
         ?>
-                <li class="hvr-float-shadow">
-                    <a href="user-account.php" class="nav-link"><span class="link-text"><?php echo $email;?></span></a>
-                </li>
-                <li class="hvr-float-shadow">
-                    <a href="logout.php">Log Out</a>
+                <li class="nav-item">
+                    <a href="session_logout.php" class="nav-link"><i class="bi bi-box-arrow-right logout"></i> Logout</a>
                 </li>
         <?php 
             } else {
