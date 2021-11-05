@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <title>Cannon Studio</title>
     <link rel="stylesheet" href="css/contact_us.css">
-    <link rel="icon" href="resources/img/cannon_logo.png" />
+    <link rel="icon" href="resources/img/cannon_logo.png"/>
 </head>
 
 <body>
 <?php include 'header.php';?>
 
 <div class="container contactus">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-7">
-            <img class="cannondslr" src="resources/img/dslr-1.png">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.189745264857!2d101.69651978199569!3d3.14808051314377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc482b1dcd5813%3A0x106058ce3bc33aba!2sMenara%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1636091856376!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
         <div class="col-5">
-            <h2>Cannon Studio, <br> is located at the heart of the city <br> Kuala Lumpur </h2>
+            <h2>Cannon Studio <br> is located at the heart of the city, <br> Kuala Lumpur. </h2>
+            <br>
+            <a href="chatbot.php" class="btn view-btn" role="button" style="color:white; background-color:red;">Click here to chat with our personalised bot! :D </a>
         </div>
     </div>
 </div>

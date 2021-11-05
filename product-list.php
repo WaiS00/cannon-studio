@@ -19,7 +19,7 @@
 
         <div class = "container product">
         <?php
-        $query = "SELECT * FROM tbl_product";
+        $query = "SELECT * FROM product_list";
         $product_array = $shoppingCart->getAllProduct($query);
         if (!empty($product_array)) {
             foreach ($product_array as $key => $value) {
@@ -86,13 +86,6 @@
                     // Callback handler that will be called on failure
                     request.fail(function(jqXHR, textStatus, errorThrown) {
                         window.alert("Oh no!\n" + errorThrown);
-                    });
-
-                    // Callback handler that will be called regardless
-                    // if the request failed or succeeded
-                    request.always(function() {
-                        // Reenable the inputs
-                        $inputs.prop("disabled", false);
                     });
 
                 });

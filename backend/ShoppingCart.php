@@ -6,7 +6,7 @@ class ShoppingCart extends DBController
 
     function getAllProduct()
     {
-        $query = "SELECT * FROM tbl_product";
+        $query = "SELECT * FROM product_list";
         
         $productResult = $this->getDBResult($query);
         return $productResult;
@@ -14,7 +14,7 @@ class ShoppingCart extends DBController
 
     function getSet()
     {
-        $query = "SELECT * FROM tbl_product WHERE category = 'set'";
+        $query = "SELECT * FROM product_list WHERE category = 'set'";
         
         $productResult = $this->getDBResult($query);
         return $productResult;
@@ -22,7 +22,7 @@ class ShoppingCart extends DBController
 
     function getBody()
     {
-        $query = "SELECT * FROM tbl_product WHERE category = 'body'";
+        $query = "SELECT * FROM product_list WHERE category = 'body'";
         
         $productResult = $this->getDBResult($query);
         return $productResult;
@@ -30,7 +30,7 @@ class ShoppingCart extends DBController
     
     function getLens()
     {
-        $query = "SELECT * FROM tbl_product WHERE category = 'lens'";
+        $query = "SELECT * FROM product_list WHERE category = 'lens'";
         
         $productResult = $this->getDBResult($query);
         return $productResult;
@@ -38,7 +38,7 @@ class ShoppingCart extends DBController
 
     function getAccessories()
     {
-        $query = "SELECT * FROM tbl_product WHERE category = 'accessories'";
+        $query = "SELECT * FROM product_list WHERE category = 'accessories'";
         
         $productResult = $this->getDBResult($query);
         return $productResult;
@@ -46,8 +46,8 @@ class ShoppingCart extends DBController
 
     function getMemberCartItem($member_id)
     {
-        $query = "SELECT tbl_product.*, tbl_cart.id as cart_id,tbl_cart.quantity FROM tbl_product, tbl_cart WHERE 
-            tbl_product.id = tbl_cart.product_id AND tbl_cart.member_id = ?";
+        $query = "SELECT product_list.*, shopping_cart.id as cart_id,shopping_cart.quantity FROM product_list, shopping_cart WHERE 
+            product_list.id = shopping_cart.product_id AND shopping_cart.member_id = ?";
         
         $params = array(
             array(
@@ -62,7 +62,7 @@ class ShoppingCart extends DBController
 
     function getProductByCode($product_code)
     {
-        $query = "SELECT * FROM tbl_product WHERE code=?";
+        $query = "SELECT * FROM product_list WHERE code=?";
         
         $params = array(
             array(
@@ -77,7 +77,7 @@ class ShoppingCart extends DBController
 
     function getCartItemByProduct($product_id, $member_id)
     {
-        $query = "SELECT * FROM tbl_cart WHERE product_id = ? AND member_id = ?";
+        $query = "SELECT * FROM shopping_cart WHERE product_id = ? AND member_id = ?";
         
         $params = array(
             array(
@@ -96,7 +96,7 @@ class ShoppingCart extends DBController
 
     function addToCart($product_id, $quantity, $member_id)
     {
-        $query = "INSERT INTO tbl_cart (product_id,quantity,member_id) VALUES (?, ?, ?)";
+        $query = "INSERT INTO shopping_cart (product_id,quantity,member_id) VALUES (?, ?, ?)";
         
         $params = array(
             array(
@@ -118,7 +118,7 @@ class ShoppingCart extends DBController
 
     function updateCartQuantity($quantity, $cart_id)
     {
-        $query = "UPDATE tbl_cart SET  quantity = ? WHERE id= ?";
+        $query = "UPDATE shopping_cart SET  quantity = ? WHERE id= ?";
         
         $params = array(
             array(
@@ -136,7 +136,7 @@ class ShoppingCart extends DBController
 
     function deleteCartItem($cart_id)
     {
-        $query = "DELETE FROM tbl_cart WHERE id = ?";
+        $query = "DELETE FROM shopping_cart WHERE id = ?";
         
         $params = array(
             array(
@@ -150,7 +150,7 @@ class ShoppingCart extends DBController
 
     function emptyCart($member_id)
     {
-        $query = "DELETE FROM tbl_cart WHERE member_id = ?";
+        $query = "DELETE FROM shopping_cart WHERE member_id = ?";
         
         $params = array(
             array(

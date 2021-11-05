@@ -19,7 +19,7 @@
 
         <div class = "container product">
         <?php
-        $query = "SELECT * FROM tbl_product WHERE category = 'body'";
+        $query = "SELECT * FROM product_list WHERE category = 'body'";
         $product_array = $shoppingCart->getBody($query);
         if (!empty($product_array)) {
             foreach ($product_array as $key => $value) {
@@ -88,12 +88,6 @@
                         window.alert("Oh no!\n" + errorThrown);
                     });
 
-                    // Callback handler that will be called regardless
-                    // if the request failed or succeeded
-                    request.always(function() {
-                        // Reenable the inputs
-                        $inputs.prop("disabled", false);
-                    });
 
                 });
             });
