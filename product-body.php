@@ -17,7 +17,7 @@
 <BODY>
 <?php include 'header.php';?>
 
-        <div class = "container product">
+<div class = "container product">
         <?php
         $query = "SELECT * FROM product_list WHERE category = 'body'";
         $product_array = $shoppingCart->getBody($query);
@@ -37,9 +37,18 @@
                             <input class= "quantity" type="text" name="quantity" value="1" size="2" />
                         </div>
                         <div>
+                        <?php         
+                            if(isset($_SESSION['name'])){
+                        ?>
                             <input type="submit" value="Add to cart" class="btnAddAction" />
                             <input type="hidden" value="add" name="action" />
                             <input type="hidden" value="<?php echo $product_array[$key]["code"]; ?>" name="code" />
+                        <?php
+                        }else{
+                            ?>
+                            <?php echo 'Login to Add to Cart' ?>
+                        <?php
+                        }?>
                         </div>
                     </form>
                 </div>
@@ -47,7 +56,7 @@
             }
         }
         ?>
-        </div>
+</div>
 
         <script type="text/javascript">
             $(document).ready(function() {
