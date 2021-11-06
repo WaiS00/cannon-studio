@@ -28,8 +28,8 @@
 	
   
 	if($validation==""){
-		$query = "INSERT INTO $tbl_name (userid, name, telno,address, email, login, pass) 
-        VALUES(NULL,$fullName, $telno, $address, $email, $myusername, '$mypassword')";
+		$query = "INSERT INTO $tbl_name (userid, name, telno,address, email, login, pass, type) 
+        VALUES(NULL,$fullName, $telno, $address, $email, $myusername, '$mypassword', 'customer')";
     
         $result = $pdo->query($query);
 

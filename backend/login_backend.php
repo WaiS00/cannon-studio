@@ -25,15 +25,23 @@ if(isset($_POST['username']) && isset($_POST['pwd'])){
     $fn  = $row['name'];
     $un  = $row['login'];
     $pw  = $row['pass'];
+    $ty  = $row['type'];
 
     if (password_verify( $pw_temp, $pw))
     {
       session_start();
 
       $_SESSION['name'] = $fn;
+      $_SESSION['type'] = $ty;
 
-      echo "<script type='text/javascript'>alert('Login Successfully');</script>";
-      echo "<script type='text/javascript'>window.location.href = './homepage.php';</script>";
+      if($_SESSION['type'] == 'customer'){
+        echo "<script type='text/javascript'>alert('Login Successfully');</script>";
+        echo "<script type='text/javascript'>window.location.href = './homepage.php';</script>";
+      }else if($_SESSION['type'] == 'admin'){
+        echo "<script type='text/javascript'>window.location.href = './admin_home.php';</script>";
+      }
+
+
     }
     else echo "<script type='text/javascript'>alert('Incorrect username/ password');</script>";
   }
