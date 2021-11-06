@@ -1,7 +1,7 @@
 <?php
 require_once "ShoppingCart.php";
 
-$member_id = 2; // you can your integerate authentication module here to get logged in member
+$member_id = 1;
 
 $shoppingCart = new ShoppingCart();
 if (! empty($_POST["action"])) {

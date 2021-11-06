@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once "backend/admin_backend.php"; ?>
+<?php require_once "backend/add_backend.php"; ?>
 
 <HEAD>
     <meta charset="UTF-8">
@@ -18,23 +18,15 @@
 	<?php include 'header.php';?>
 	<form method="post">
 		<table width="450" class="center">
-			<h1 class="titleName">Add Products</h1>
+			<h1 class="titleName">Add Services</h1>
 			<tr>
-				<td><label>Product Name</label></td>
+				<td><label>Service Name</label></td>
 				<td><input type="text" name="name" />
 			</tr>
 			<tr>
-				<td><label>Category</label></td>
-				<td><input type="text" name="category" />
-			</tr>
-			<tr>
-				<td><label>Code</label></td>
-				<td><input type="text" name="code"  />
-			</tr> 
-				<tr>
 				<td><label>Image href</label></td>
-				<td><input type="text" name="image"  />
-			</tr> 
+				<td><input type="text" name="image" />
+			</tr>
 			<tr>
 				<td><label>Price (RM)</label></td>
 				<td><input type="number" name ="price" step="0.01" value="0.0"  />

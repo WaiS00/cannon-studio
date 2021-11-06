@@ -18,6 +18,10 @@
     </button>
 
   <div class="collapse navbar-collapse" id="navmenu">
+  
+  <?php 
+      if($_SESSION['type'] != 'admin'){
+  ?>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link" aria-current="page" href="homepage.php">Home</a>
@@ -41,10 +45,40 @@
         <a class="nav-link" href="contact_us.php">Contact Us</a>
       </li>
     </ul>
+    <?php 
+      } else {
+        ?>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="admin_home.php">Add Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add_services.php">Add Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin_product_list.php">View Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin_service_list.php">View Services</a>
+            </li>
+          </ul>
+        <?php
+      }
+    ?>
+
     <ul class="navbar-nav ms-auto">
+      
+      <?php 
+      if($_SESSION['type'] != 'admin'){
+      ?>
       <li class="nav-item">
         <a href="cart_main.php" class="nav-link"><i class="bi bi-cart"></i> Cart</a>
       </li>
+      <?php
+      }else{
+      }
+      ?>
+
       <li class="nav-item">
         <?php 
         if(isset($_SESSION['name'])){

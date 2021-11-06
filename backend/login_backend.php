@@ -16,6 +16,7 @@ if(isset($_POST['username']) && isset($_POST['pwd'])){
     $pw_temp = sanitise($pdo,$_POST['pwd']);
     $query   = "SELECT * FROM userdb WHERE login=$un_temp";
     $result  = $pdo->query($query);
+    $tbl_name = 'userdb';
 
     if (!$result->rowCount()){
       echo "<script type='text/javascript'>alert('Please enter your username and password');</script>";
