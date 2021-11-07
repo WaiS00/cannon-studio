@@ -47,9 +47,28 @@ td {
 .titleName{
     text-align:center;
     margin-top: 4em;
+    margin-bottom: 1em;
 }
 
 .titleName2{
     text-align:center;
     margin-top: 6em;
+}
+
+.form2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.update{
+    margin-bottom: 16em;
+    margin-top: 1em;
+    background-color: red;
+    color: white;
+	border: 0;
+	padding: 3px 10px;
+	color: #ffffff;
+	border-radius: 2px;
+	cursor:pointer;
 }

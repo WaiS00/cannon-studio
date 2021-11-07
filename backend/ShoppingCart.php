@@ -148,6 +148,18 @@ class ShoppingCart extends DBController
         $this->updateDB($query, $params);
     }
 
+    public function getData($query)
+	{		
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+	}    
+    
+    public function execute($query)
+	{		
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+	}
+
     function delete($id)
     {
         $query = "DELETE FROM product_list WHERE id = $id";
