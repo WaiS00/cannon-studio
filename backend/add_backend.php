@@ -18,7 +18,7 @@ if(isset($_POST['name']) && isset($_POST['price'])){
     $result = $pdo->query($query);
   
     echo "<script type='text/javascript'>alert('Added Successfully');</script>";
-    echo "<script type='text/javascript'>window.location.href = './admin_product_list.php';</script>";
+    echo "<script type='text/javascript'>window.location.href = './admin_service_list.php';</script>";
   }
   
   }
