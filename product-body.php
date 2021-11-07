@@ -86,18 +86,11 @@
                         type: "POST",
                         data: serializedData
                     });
-
+                    
                     // Callback handler that will be called on success
                     request.done(function(response, textStatus, jqXHR) {
-                        window.alert("Hooray, it worked!");
+                        window.alert("Item has been added to cart");
                     });
-
-                    // Callback handler that will be called on failure
-                    request.fail(function(jqXHR, textStatus, errorThrown) {
-                        window.alert("Oh no!\n" + errorThrown);
-                    });
-
-
                 });
             });
         </script>

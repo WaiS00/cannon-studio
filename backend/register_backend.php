@@ -11,12 +11,12 @@
 	$address    = sanitise($pdo,$_POST['address']);
 	$email      = sanitise($pdo,$_POST['email']);
 	$fullName   = sanitise($pdo,$_POST['full_name']);
-  $tbl_name = 'userdb';
+  	$tbl_name = 'userdb';
 
 	$validation = data_validation($_POST['username'], "/^[a-z\d_]{5,20}$/" , "username");
-  $validation .= data_validation($_POST['pwd'], '/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,12}$/', "password- at least one letter, at least one number, and there have to be 6-12 characters");
-  $validation .= data_validation($_POST['email'],  "/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/" , "email");
-  $validation .= data_validation($_POST['full_name'], "/.+/", "full Name");
+  	$validation .= data_validation($_POST['pwd'], '/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,12}$/', "password- at least one letter, at least one number, and there have to be 6-12 characters");
+ 	$validation .= data_validation($_POST['email'],  "/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/" , "email");
+  	$validation .= data_validation($_POST['full_name'], "/.+/", "full Name");
 	
   
 	if($validation==""){

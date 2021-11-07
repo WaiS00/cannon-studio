@@ -21,11 +21,11 @@
         <?php
         $query = "SELECT * FROM product_list";
         $product_array = $shoppingCart->getAllProduct($query);
+
         if (!empty($product_array)) {
             foreach ($product_array as $key => $value) {
         ?>
                 <div class="col-3 product-item">
-                    <form method="post" class="form">
                         <div class="product-image">
                             <img class="product-img" src="<?php echo $product_array[$key]["image"]; ?>">
                         </div>
@@ -33,7 +33,7 @@
                         <div class="product-name"><strong><?php echo $product_array[$key]["name"]; ?></strong></div>
                         </div>
                         <div class="product-price"><?php echo "RM" . $product_array[$key]["price"]; ?></div>
-                    </form>
+                        <td> <a href="delete.php?id=<?php echo $product_array[$key]["id"];?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td>  
                 </div>
         <?php
             }

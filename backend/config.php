@@ -1,7 +1,7 @@
 <?php
 require_once "ShoppingCart.php";
 
-$member_id = 1;
+$member_id = 2; 
 
 $shoppingCart = new ShoppingCart();
 if (! empty($_POST["action"])) {

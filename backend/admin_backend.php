@@ -15,7 +15,7 @@ if ($_POST['name'] == "" || $_POST['category'] == "" || $_POST['code'] == "" || 
   echo "<script type='text/javascript'>alert('Field not filled');</script>";
 }else{
   $query = "INSERT INTO $tbl_name (id, name, category, code, image, price) 
-  VALUES(NULL,$name, $category, $code, $image , '$price)";
+  VALUES(NULL,$name, $category, $code, $image , $price)";
 
   $result = $pdo->query($query);
 
