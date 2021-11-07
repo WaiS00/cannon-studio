@@ -31,7 +31,7 @@
                         <div class="product-name"><strong><?php echo $product_array[$key]["name"]; ?></strong></div>
                         </div>
                         <div class="product-price"><?php echo "From RM" . $product_array[$key]["price"]; ?></div>
-                        <a href="chatbot.php" class="btn view-btn" role="button" class="Chat Now!" style="background-color:aqua;"> Chat Now</a>
+                        <td> <a href="delete_service.php?id=<?php echo $product_array[$key]["id"];?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td>  
                 </div>
         <?php
             }

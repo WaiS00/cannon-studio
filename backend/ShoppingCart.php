@@ -148,6 +148,22 @@ class ShoppingCart extends DBController
         $this->updateDB($query, $params);
     }
 
+    function delete($id)
+    {
+        $query = "DELETE FROM product_list WHERE id = $id";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }
+
+    function deleteService($id)
+    {
+        $query = "DELETE FROM services WHERE id = $id";
+        
+        $productResult = $this->getDBResult($query);
+        return $productResult;
+    }
+
     function emptyCart($member_id)
     {
         $query = "DELETE FROM shopping_cart WHERE member_id = ?";
@@ -161,4 +177,5 @@ class ShoppingCart extends DBController
         
         $this->updateDB($query, $params);
     }
+
 }
