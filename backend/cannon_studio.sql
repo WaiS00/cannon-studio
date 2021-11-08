@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 07, 2021 at 07:30 AM
+-- Generation Time: Nov 08, 2021 at 04:37 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.11
 
@@ -42,9 +42,9 @@ CREATE TABLE `product_list` (
 --
 
 INSERT INTO `product_list` (`id`, `name`, `category`, `code`, `image`, `price`) VALUES
-(1, 'Cannon Original DSLR', 'set', 'dslr', 'resources/img/dslr-1.png', 10000.00),
+(1, 'Cannon Original DSLR', 'set', 'dslr', 'resources/img/dslr-1.png', 11000.00),
 (2, 'EOS 850d', 'set', 'eos-850d', 'resources/img/eos_850d.png', 4000.00),
-(3, 'EOS 850d (Body Only)', 'body', 'body-850', 'resources/img/eos_850d_body.png', 3000.00),
+(3, 'EOS 850d (Body Only)', 'body', 'body-850', 'resources/img/eos_850d_body.png', 3001.00),
 (4, 'EOS M50 Mark II', 'set', 'markiiM50', 'resources/img/eos_m50_mark2.png', 11500.00),
 (5, 'EOS M50 (Body Only)', 'body', 'm50', 'resources/img/eos_m50_body.png', 5200.00),
 (6, 'EOS R5', 'set', 'r5', 'resources/img/eos_r5.png', 9400.00),
@@ -79,7 +79,7 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `name`, `image`, `price`) VALUES
 (1, 'Wedding Photography', 'resources/img/wedding.png', 1500.00),
-(2, 'Birthday Photography', 'resources/img/birthday.png', 800.00);
+(4, 'Birthday Photography', 'resources/img/birthday.png', 800.00);
 
 -- --------------------------------------------------------
 
@@ -102,10 +102,10 @@ CREATE TABLE `shopping_cart` (
 
 CREATE TABLE `userdb` (
   `userid` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `telno` varchar(100) NOT NULL,
-  `address` varchar(100) NOT NULL,
-  `email` varchar(50) NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `telno` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `address` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `login` varchar(20) NOT NULL,
   `pass` varchar(255) NOT NULL,
   `type` enum('admin','customer') NOT NULL
@@ -117,7 +117,7 @@ CREATE TABLE `userdb` (
 
 INSERT INTO `userdb` (`userid`, `name`, `telno`, `address`, `email`, `login`, `pass`, `type`) VALUES
 (40, 'Wai Siong zzz', '0122978732', '12,sdjkadjkc', 'waisiong144@gmail.com', 'wais100', '$2y$10$1iEfy2twjFORASTSDb0t2.WD9mtF7zU2AQf6vtf1nSYA0n7o6ey8u', 'customer'),
-(43, 'admin legend', '0123456789', '12, ashdjaskhda', 'admin1@hotmail.com', 'admin', '$2y$10$DkF4iWmhtk.wSiywHTxzCusAxU09b7xnpZULjTU6jvYzRU3d1QBCi', 'admin');
+(44, 'Admin Chin', NULL, NULL, NULL, 'admin', '$2y$10$/.6NYjrjlDsc0FPON3FVI.U56xzsIpRvZf4/gWcROqkfn4g3We7Nm', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -158,25 +158,25 @@ ALTER TABLE `userdb`
 -- AUTO_INCREMENT for table `product_list`
 --
 ALTER TABLE `product_list`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `shopping_cart`
 --
 ALTER TABLE `shopping_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
 
 --
 -- AUTO_INCREMENT for table `userdb`
 --
 ALTER TABLE `userdb`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
