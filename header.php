@@ -5,7 +5,7 @@
 
 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
   <div class="container-fluid">
-    <a href="#" class="navbar-brand">
+    <a href="homepage.php" class="navbar-brand">
       <img src="resources/img/cannon_logo.png" alt="logo" width="250" height="auto" class="d-inline-block align-text-top">
     </a>
     <button
@@ -21,6 +21,8 @@
   
   <?php 
       if($_SESSION['type'] != 'admin'){
+        // is user not admin, then it's customer 
+        // display cart for user to add in products
   ?>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
@@ -47,6 +49,8 @@
     </ul>
     <?php 
       } else {
+        // there's only two user - admin and customer
+        // if not customer then it's admin, so display the admin function
         ?>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -61,6 +65,9 @@
             <li class="nav-item">
               <a class="nav-link" href="admin_service_list.php">View Services</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add_admin.php">Add Admin</a>
+            </li>
           </ul>
         <?php
       }
@@ -70,6 +77,8 @@
       
       <?php 
       if($_SESSION['type'] != 'admin'){
+        // is user not admin, then it's customer 
+        // display cart for user to add in products
       ?>
       <li class="nav-item">
         <a href="cart_main.php" class="nav-link"><i class="bi bi-cart"></i> Cart</a>
@@ -81,6 +90,7 @@
 
       <li class="nav-item">
         <?php 
+        // every user that has login shares this function (logout)
         if(isset($_SESSION['name'])){
         ?>
                 <li class="nav-item">
@@ -88,6 +98,7 @@
                 </li>
         <?php 
             } else {
+              // if the user havent login, display link for them to sign up
         ?>
                 <li class="hvr-float-shadow">
                     <a href="register.php" class="nav-link"><span class="link-text">Sign Up</span></a>

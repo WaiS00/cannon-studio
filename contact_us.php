@@ -25,10 +25,11 @@
         <div class="col-5">
             <h2>Cannon Studio <br> is located at the heart of the city, <br> Kuala Lumpur. </h2>
             <br>
-            <a href="chatbot.php" class="btn view-btn" role="button" style="color:white; background-color:red;">Click here to chat with our personalised bot! :D </a>
+            <a onclick="openForm()" class="btn view-btn" role="button" style="color:white; background-color:red;">Click here to chat with our personalised bot! :D </a>
         </div>
     </div>
 </div>
+<?php include 'chatbot.php' ?>
 
 <?php include 'footer.php';?>
 

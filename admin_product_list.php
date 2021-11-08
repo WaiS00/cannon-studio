@@ -33,14 +33,13 @@
                         <div class="product-name"><strong><?php echo $product_array[$key]["name"]; ?></strong></div>
                         </div>
                         <div class="product-price"><?php echo "RM" . $product_array[$key]["price"]; ?></div>
-                        <td> <a href="delete.php?id=<?php echo $product_array[$key]["id"];?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td>  
+                        <td><a href="edit_product.php?id=<?php echo $product_array[$key]["id"];?>">Edit</a> | <a href="backend/delete_product.php?id=<?php echo $product_array[$key]["id"];?>" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td>  
                 </div>
         <?php
             }
         }
         ?>
 </div>
-    </div>
         <?php include 'footer.php';?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 

@@ -60,6 +60,7 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
+                //https://stackoverflow.com/questions/5004233/jquery-ajax-post-example-with-php
                 // Bind to the submit event of our form
                 $(".form").submit(function(event) {
 
