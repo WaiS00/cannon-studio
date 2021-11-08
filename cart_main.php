@@ -22,6 +22,7 @@ if (! empty($cartItem)) {
     ?>	
 <div class="container">
 <table class="table" cellpadding="10" cellspacing="1">
+
             <tbody>
                 <tr>
                     <th scope="col" style="text-align: left;"><strong>Name</strong></th>
@@ -50,13 +51,21 @@ if (! empty($cartItem)) {
     ?>
 
 <tr>
-                    <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
-                    <td style="text-align: right;"><?php echo "RM".$item_total; ?></td>
-                    <td></td>
-                </tr>
-            </tbody>
+    <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+    <td style="text-align: right;"><?php echo "RM".$item_total; ?></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4"  style="text-align: center;">
+        <input type="submit" name="pay" value="Pay" class="button" onclick="window.location.href='payment.php'">
+    </td>
+</tr>
+</tbody>
+
         </table>	
-</div>	
+
+
+    </div>	
   <?php
 }
 ?>
