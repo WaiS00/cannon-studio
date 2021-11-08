@@ -22,6 +22,10 @@
 		<table width="450" class="center">
 			<h1 class="titleName">Add Admin</h1>
 			<tr>
+				<td><label>Full Name</label></td>
+				<td><input type="text" name="name" />
+			</tr>				
+			<tr>
 				<td><label>Username</label></td>
 				<td><input type="text" name="username" />
 			</tr>
