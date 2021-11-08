@@ -30,7 +30,6 @@ if (! empty($_POST["action"])) {
 if (!empty($_GET["action"])) {
     switch ($_GET["action"]) {
         case "remove":
-            // Delete single entry from the cart
             $shoppingCart->deleteCartItem($_GET["id"]);
             break;
         case "empty":

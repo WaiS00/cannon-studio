@@ -19,7 +19,9 @@ if(isset($_POST['username']) && isset($_POST['pwd'])){
     $tbl_name = 'userdb';
 
     if (!$result->rowCount()){
-      echo "<script type='text/javascript'>alert('Please enter your username and password');</script>";
+      // if user not found in database
+      echo "<script type='text/javascript'>alert('User Not Found, Please Register.');</script>";
+      echo "<script type='text/javascript'>window.location.href = './register.php';</script>";
     }
 
     $row = $result->fetch();
