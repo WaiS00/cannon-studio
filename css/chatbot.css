@@ -16,10 +16,11 @@
   font-family: monospace;
 }
 .mid{
-  background: #00af9c;
+  background: #ffacac;
 }
-.mid.chat{
-  box-sizing: border-box;
+
+.mid .chat{
+  min-height: 250px;
 }
 .mid .chat p{
   margin: 0;
@@ -83,20 +84,5 @@
   height: 300px;
 }
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
 
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
-}
+
