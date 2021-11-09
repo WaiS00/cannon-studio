@@ -1,6 +1,6 @@
 <?php
-include_once("backend/ShoppingCart.php");
-include_once("backend/validation.php");
+include_once("ShoppingCart.php");
+include_once("validation.php");
 
 $crud = new ShoppingCart();
 $validation = new Validation();
@@ -19,9 +19,9 @@ if(isset($_POST['update']))
 		//link to the previous page
 		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} else {	
-		$result = $crud->execute("UPDATE product_list SET name='$name',image='$image',price='$price' WHERE id=$id");
+		$result = $crud->execute("UPDATE services SET name='$name',image='$image',price='$price' WHERE id=$id");
 		
-		header("Location: admin_product_list.php");
+		header("Location: ../admin_service_list.php");
 	}
 }
 ?>

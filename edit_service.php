@@ -1,5 +1,5 @@
 <?php
-include_once("backend/edit_backend.php");?>
+include_once("backend/edit_service_backend.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +19,7 @@ include_once("backend/edit_backend.php");?>
 	<?php include 'header.php';?>
 
     <div class= "container form2">
-	<form name="form1" method="post" action="backend/editaction.php">
+	<form name="form1" method="post" action="backend/editaction2.php">
 		<table width="450">
         <h1 class="titleName">Edit Product</h1>
 			<tr> 
