@@ -18,6 +18,7 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
+<h1 class="titleName">DSLR Set with Kit lens</h1><br>
         <?php
         $query = "SELECT * FROM product_list WHERE category = 'set'";
         $product_array = $shoppingCart->getSet($query);

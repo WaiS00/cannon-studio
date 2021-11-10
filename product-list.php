@@ -18,6 +18,7 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
+<h1 class="titleName">All Product List</h1><br>
         <?php
         $query = "SELECT * FROM product_list";
         $product_array = $shoppingCart->getAllProduct($query);

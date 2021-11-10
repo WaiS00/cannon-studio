@@ -35,7 +35,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
           <li><a class="dropdown-item" href="product-body.php">DSLR Body</a></li>
           <li><a class="dropdown-item" href="product-lens.php">Lenses</a></li>
-          <li><a class="dropdown-item" href="product-set.php">Set(DSLR and Lens)</a></li>
+          <li><a class="dropdown-item" href="product-set.php">Set (DSLR and Lens)</a></li>
           <li><a class="dropdown-item" href="product-accessories.php">Accessories</a></li>
           <li><a class="dropdown-item" href="product-list.php">View All Products</a></li>
         </ul>

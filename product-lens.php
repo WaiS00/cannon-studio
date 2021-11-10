@@ -18,6 +18,7 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
+<h1 class="titleName">Lenses</h1><br>
         <?php
         $query = "SELECT * FROM product_list WHERE category = 'lens'";
         $product_array = $shoppingCart->getLens($query);

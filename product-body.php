@@ -18,6 +18,7 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
+<h1 class="titleName">DSLR Body</h1><br>
         <?php
         $query = "SELECT * FROM product_list WHERE category = 'body'";
         $product_array = $shoppingCart->getBody($query);
