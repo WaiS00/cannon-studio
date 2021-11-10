@@ -50,7 +50,7 @@
 
                 </div>
                 <div class="wrap">
-                <a href="cart_main.php?action=empty"><input type="submit" value="Continue to checkout" class="button" onclick="done()" ></a>
+                <a href="cart_main.php?action=empty"><input type="submit" value="Click here to pay now" class="button" onclick="done()" ></a>
                 </div>
             </div>
         </div>
