@@ -21,7 +21,7 @@ include_once("backend/edit_service_backend.php");?>
     <div class= "container form2">
 	<form name="form1" method="post" action="backend/editaction2.php">
 		<table width="450">
-        <h1 class="titleName">Edit Product</h1>
+        <h1 class="titleName">Edit Service</h1>
 			<tr> 
 				<td>Name</td>
 				<td><input type="text" name="name" value="<?php echo $name;?>"></td>

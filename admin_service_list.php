@@ -17,6 +17,7 @@
 <?php include 'header.php';?>
 
         <div class = "container product">
+        <h1 class="titleName">Service Provided List</h1><br>
         <?php
         $query = "SELECT * FROM services";
         $product_array = $servicesResult->getAllServices($query);

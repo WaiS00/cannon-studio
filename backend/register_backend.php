@@ -20,6 +20,7 @@
 	
 	  if ($_POST['username'] == "" || $_POST['pwd'] == "" || $_POST['telno'] == "" || $_POST['address'] == "" || $_POST['email'] == ""|| $_POST['full_name'] == "") {
 		echo "<script type='text/javascript'>alert('Field not filled');</script>";
+		
 	  }else{
 		if($validation==""){
 			$query = "INSERT INTO $tbl_name (userid, name, telno,address, email, login, pass, type) 

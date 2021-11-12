@@ -18,8 +18,15 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
+<h1 class="titleName">DSLR Body List</h1><br>
+
+<div id="container">
+<input type="text" name="search" id="search" class="form-control" placeholder="Search products"><br><br>
+<h6 class="bg-danger" id="result"></h6>
+
+</div>
         <?php
-        $query = "SELECT * FROM product_list WHERE category = 'body'";
+        $query = "SELECT * FROM product_list WHERE category='body'";
         $product_array = $shoppingCart->getBody($query);
         if (!empty($product_array)) {
             foreach ($product_array as $key => $value) {
@@ -58,41 +65,68 @@
         ?>
 </div>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                // Bind to the submit event of our form
-                $(".form").submit(function(event) {
+<script type="text/javascript">
+    $(document).ready(function() {
+        //https://stackoverflow.com/questions/5004233/jquery-ajax-post-example-with-php
+        // Bind to the submit event of our form
+        $(".form").submit(function(event) {
 
-                    // Prevent default posting of form
-                    event.preventDefault();
+            // Prevent default posting of form
+            event.preventDefault();
 
-                    // setup some local variables
-                    var $form = $(this);
+            // setup some local variables
+            var $form = $(this);
 
-                    // Let's select and cache all the fields
-                    var $inputs = $form.find("input, select, button, textarea");
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input, select, button, textarea");
 
-                    // Serialize the data in the form
-                    var serializedData = $form.serialize();
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
 
-                    // Let's disable the inputs for the duration of the Ajax request.
-                    // Note: we disable elements AFTER the form data has been serialized.
-                    // Disabled form elements will not be serialized.
-                    $inputs.prop("disabled", true);
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
 
-                    // Fire off the request to /form.php
-                    request = $.ajax({
-                        url: "cart_main.php",
-                        type: "POST",
-                        data: serializedData
-                    });
-                    
-                    // Callback handler that will be called on success
-                    request.done(function(response, textStatus, jqXHR) {
-                        window.alert("Item has been added to cart");
-                    });
-                });
+            // Fire off the request to /form.php
+            request = $.ajax({
+                url: "cart_main.php",
+                type: "POST",
+                data: serializedData
             });
+
+            // Callback handler that will be called on success
+            request.done(function(response, textStatus, jqXHR) {
+                window.alert("Item has been added to cart");
+            });
+        });
+    });
+
+
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+
+            var search = $('#search').val();
+
+            $.ajax({
+
+                url:'search.php',
+                data:{search:search},
+                type: 'POST',
+                success:function(data){
+
+                    if(!data.error){
+                        $('#result').html(data);
+                    }
+
+                }
+
+            });
+
+        });
+
+
+    });
         </script>
     </div>
         <?php include 'footer.php';?>
