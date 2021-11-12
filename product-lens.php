@@ -18,7 +18,7 @@
 <?php include 'header.php';?>
 
 <div class = "container product">
-<h1 class="titleName">All Product List</h1><br>
+<h1 class="titleName">DSLR Lens List</h1><br>
 
 <div id="container">
 <input type="text" name="search" id="search" class="form-control" placeholder="Search products"><br><br>
