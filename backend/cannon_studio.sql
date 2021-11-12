@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 08, 2021 at 04:37 PM
+-- Generation Time: Nov 12, 2021 at 02:24 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.11
 
@@ -117,7 +117,8 @@ CREATE TABLE `userdb` (
 
 INSERT INTO `userdb` (`userid`, `name`, `telno`, `address`, `email`, `login`, `pass`, `type`) VALUES
 (40, 'Wai Siong zzz', '0122978732', '12,sdjkadjkc', 'waisiong144@gmail.com', 'wais100', '$2y$10$1iEfy2twjFORASTSDb0t2.WD9mtF7zU2AQf6vtf1nSYA0n7o6ey8u', 'customer'),
-(44, 'Admin Chin', NULL, NULL, NULL, 'admin', '$2y$10$/.6NYjrjlDsc0FPON3FVI.U56xzsIpRvZf4/gWcROqkfn4g3We7Nm', 'admin');
+(44, 'Admin Chin', NULL, NULL, NULL, 'admin', '$2y$10$/.6NYjrjlDsc0FPON3FVI.U56xzsIpRvZf4/gWcROqkfn4g3We7Nm', 'admin'),
+(51, 'lol lol lol', '0122978732', '14, sahja', 'waisiong144@gmail.com', 'wais200', '$2y$10$/YK3cc.t.QJBxuT1eZ/mPuwukO96vT4QPn27cRqCWyJAwDCbC7yAi', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -158,25 +159,25 @@ ALTER TABLE `userdb`
 -- AUTO_INCREMENT for table `product_list`
 --
 ALTER TABLE `product_list`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `shopping_cart`
 --
 ALTER TABLE `shopping_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
 
 --
 -- AUTO_INCREMENT for table `userdb`
 --
 ALTER TABLE `userdb`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

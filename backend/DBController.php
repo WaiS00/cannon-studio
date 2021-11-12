@@ -4,8 +4,8 @@ class DBController
 {
 
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
+    private $user = "assignment";
+    private $password = "pass";
     private $database = "cannon_studio";
     private static $conn;
 

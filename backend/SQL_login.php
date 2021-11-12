@@ -1,8 +1,8 @@
 <?php // SQL_login.php
   $host = 'localhost';
   $data = 'cannon_studio';
-  $user = 'root';         // Change as necessary
-  $pass =  '';       // Change as necessary
+  $user = 'assignment';         // Change as necessary
+  $pass =  'pass';       // Change as necessary
   $chrs = 'utf8mb4';
   $attr = "mysql:host=$host;dbname=$data;charset=$chrs";
   $opts =
