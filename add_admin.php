@@ -23,7 +23,7 @@
 			<h1 class="titleName">Add Admin</h1>
 			<tr>
 				<td><label>Full Name</label></td>
-				<td><input type="text" name="name" />
+				<td><input type="text" name="full_name" />
 			</tr>				
 			<tr>
 				<td><label>Username</label></td>

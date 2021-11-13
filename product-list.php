@@ -101,8 +101,8 @@
             });
         });
     });
-
-
+</script>
+<script>
     $(document).ready(function(){
         $('#search').keyup(function(){
 
